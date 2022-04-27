@@ -72,6 +72,7 @@ def draw_heatmap(data, minx, maxx, miny, maxy, xyreso):
     plt.pcolor(x, y, data, vmax=1.0, cmap=plt.cm.Blues)
     plt.axis("equal")
 
+#create rectangles for building obstacles by specifying corner coordinates
 def square(x1, x2, y1, y2):
     for i in range(x1, x2+1):
         for j in range(y1, y2+1):
@@ -112,6 +113,7 @@ def Updraft():
             j = j + 1
     return uxp, uyp, uxn, uyn
 
+#Generating the 2D discrete grid
 def GridMap():
 
     # start and goal position
