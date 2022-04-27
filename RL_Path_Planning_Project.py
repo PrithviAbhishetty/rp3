@@ -17,7 +17,6 @@ from stable_baselines3.common.vec_env import DummyVecEnv
 from stable_baselines3.common.evaluation import evaluate_policy
 
 show_animation = True
-
 ox, oy = [], []
 
 def generate_gaussian_grid_map(uxp, uyp, uxn, uyn, xyreso, std):
@@ -115,7 +114,6 @@ def Updraft():
 
 #Generating the 2D discrete grid
 def GridMap():
-
     # start and goal position
     sx = 48  # [m]
     sy = 20  # [m]
